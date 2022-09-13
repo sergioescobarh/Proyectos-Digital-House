@@ -53,8 +53,14 @@ footer{
     text-align: center;
 }
 i{
-    font-size: 2em;
+    /*font-size: 2em; */
+    margin-bottom: 10px;
 
+}
+article{
+    transition: all 850ms;
+    margin: 10px;
+    
 }
 .CaracteristicasProductos{
     display: flex;
@@ -65,16 +71,18 @@ i{
 }
 
 .ImagenProducto{
-    width: 40vw;
+    width: 30vw;
 }
 
 .productos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 .banner{
     width: 100vw;
+    margin-top: 7px;
 }
 /* Tamaños tipográficos */ 
 .cuerpos{
@@ -92,27 +100,107 @@ i{
     color:#39b54a;
 }
 .descripciones{
-    font-size: 16px;
+    display: none;
+    transition: all 8500ms;
 }
 .Barras{
     display: flex;
     flex-wrap: wrap;
 }
 
+.fa-truck{
+    color : var(--verde)
+}
+.links{
+    margin: 15px;
+}
+.MenuHamburguesa{
+    display: block;
+    max-width: 25px;
+    max-height: 20px;
+    
+    background-color: #03264C;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoml, .eslogan{
+    width: 34vw;
+    
+}
+
+.contenedor1{
+    display: flex;
+    justify-content: space-between;
+
+}
 
 ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-direction: column;
+    
+    list-style: none;
+    margin:0;
+    padding:0;
+    font-size: 17px;
+    display: none;
+
 }
 
+article:hover .descripciones{
+    display: block;
+    font-size: 16px;
+    margin-top: 1rem;
+    font-weight: normal;
+    color: var(--grisOscuro);
+}
+
+article:hover .fa-truck{
+    transform: rotate(-90deg);
+}
+
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    /* width: 50%;*/
+    
+}
 
 @media (min-width:769px){
     .ImagenProducto{
-     width: 20vw;
-     box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
-   }}
+    width: 15vw;
+    box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+}
+.contenedor1{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.eslogan{
+    max-width:350px ;
+    text-align: right;
+}
+.MenuHamburguesa{
+    display: none;
+}
+.Barras{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    
+    display: flex;
+    flex-direction: row;
+}
+}
 
 @media (min-width:361px){ 
 
 }
+
