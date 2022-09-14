@@ -41,12 +41,11 @@
 header{
     width:vw;
     background-color: var(--amarillo);
-    
+    padding: 3px 3px 0px 3px;
 }
-main{
+.main-content{
     width: 90vw;
-    display: flex;
-    flex-wrap: wrap;
+    
     justify-content: center;
 }
 footer{
@@ -59,8 +58,13 @@ i{
 }
 article{
     transition: all 850ms;
-    margin: 10px;
-    
+    margin: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35vw;
 }
 .CaracteristicasProductos{
     display: flex;
@@ -68,17 +72,28 @@ article{
     border-top: #ebebeb solid 1px;
     flex-direction: column;
     justify-content: center;
+    width: 80%;
 }
 
 .ImagenProducto{
-    width: 30vw;
+    width: 90%;
 }
 
 .productos{
+    
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.articulosgrupo{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
+}
+.ContenedorBanner{
+    display: flex;
+    justify-content: center;
 }
 .banner{
     width: 100vw;
@@ -107,31 +122,24 @@ article{
     display: flex;
     flex-wrap: wrap;
 }
-
+.Barras a{
+    text-decoration: none;
+    color: var(--azul);
+    font-size: 15px;
+    
+}
 .fa-truck{
-    color : var(--verde)
+    color : var(--verde);
+    justify-content: flex-end;
 }
 .links{
     margin: 15px;
-}
-.MenuHamburguesa{
-    display: block;
-    max-width: 25px;
-    max-height: 20px;
     
-    background-color: #03264C;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 18px;
-    margin:auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
+
 .logoml, .eslogan{
-    width: 34vw;
+    width: 45vw;
     
 }
 
@@ -141,6 +149,29 @@ article{
 
 }
 
+.eslogan{
+    font-size: 10px;
+    line-height: 15px;
+}
+.MenuHamburguesa{
+    display: flex;
+    border-radius: 4px;
+    background-color: #03264C;
+    max-width: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.precioydescuento{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 ul{
     display: flex;
     flex-wrap: wrap;
@@ -168,13 +199,28 @@ article:hover .fa-truck{
 
 article:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    /* width: 50%;*/
+    /*width: 50%; */ 
     
 }
 
 @media (min-width:769px){
+    .productos{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    .logoml, .eslogan{
+        width: 30vw;
+        
+    }
+    .MenuHamburguesa{
+        display: none;
+    }
+    article{
+        width: 20vw;
+    }
     .ImagenProducto{
-    width: 15vw;
+   
     box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
 }
 .contenedor1{
@@ -183,12 +229,11 @@ article:hover{
     justify-content: space-between;
 }
 .eslogan{
-    max-width:350px ;
+    max-width:600px ;
     text-align: right;
+    font-size: 25px;
 }
-.MenuHamburguesa{
-    display: none;
-}
+
 .Barras{
     display: flex;
     justify-content: space-between;
@@ -201,6 +246,10 @@ ul{
 }
 
 @media (min-width:361px){ 
+    .eslogan{
+        font-size: 16px;
+        line-height: 20px;
+    }
 
 }
 

@@ -24,8 +24,9 @@
     box-sizing: border-box ;
     }
 main{
-    background-color: var(--grisClaro);
     width: 100vw;
+    background-color: var(--grisClaro);
+    
 }
 input, button{
     display: flex;
@@ -34,3 +35,17 @@ input, button{
     padding: 15px;
     margin:15px;
 }
+
+
+form{
+    background-color: var(--grisClaro);
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    
+}
+
